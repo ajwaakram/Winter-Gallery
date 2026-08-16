@@ -1,0 +1,1115 @@
+/* =====================================================
+   RESET
+====================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #f1f8fa;
+    color: #526a77;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+button {
+    font-family: inherit;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+/* =====================================================
+   HEADER
+====================================================== */
+
+.site-header {
+    width: 100%;
+    height: 90px;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.header-container {
+    width: 92%;
+    max-width: 1280px;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #516875;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 27px;
+    letter-spacing: 4px;
+}
+
+
+.snowflake {
+    font-size: 24px;
+}
+
+
+.desktop-nav {
+    display: flex;
+    gap: 38px;
+}
+
+
+.desktop-nav a {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #687b86;
+
+    transition: 0.3s;
+}
+
+
+.desktop-nav a:hover {
+    color: #8bb7c8;
+}
+
+
+.mobile-menu-btn,
+.mobile-nav {
+    display: none;
+}
+
+
+
+/* =====================================================
+   HERO
+====================================================== */
+
+.hero {
+    height: 475px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?auto=format&fit=crop&w=2000&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    transition: background-image 1s ease;
+}
+
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(231, 242, 246, 0.78);
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+}
+
+
+.hero h1 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 66px;
+    font-weight: 400;
+
+    letter-spacing: 4px;
+
+    color: #526875;
+}
+
+
+.hero p {
+    margin-top: 22px;
+
+    color: #83b2c5;
+
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+
+
+/* =====================================================
+   GALLERY
+====================================================== */
+
+.gallery-section {
+    padding: 60px 20px 100px;
+}
+
+
+.gallery-container {
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+}
+
+
+.gallery-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    margin-bottom: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.filter-btn {
+    border: none;
+    background: transparent;
+
+    color: #8aa1ad;
+
+    font-size: 10px;
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    padding: 5px 2px;
+
+    position: relative;
+}
+
+
+.filter-btn::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 1px;
+
+    background: transparent;
+}
+
+
+.filter-btn:hover,
+.filter-btn.active {
+    color: #536d7a;
+}
+
+
+.filter-btn.active::after {
+    background: #83afbf;
+}
+
+
+
+/* =====================================================
+   GALLERY GRID
+====================================================== */
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    grid-auto-rows: 160px;
+
+    gap: 5px;
+
+}
+
+
+.gallery-item {
+    position: relative;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    background: #dcebef;
+}
+
+
+.gallery-item.tall {
+    grid-row: span 2;
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
+}
+
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+    opacity: 0.85;
+}
+
+
+.gallery-item.hidden {
+    display: none;
+}
+
+
+
+/* =====================================================
+   ABOUT
+====================================================== */
+
+.about-section {
+    padding: 20px 20px 110px;
+}
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.section-title h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 28px;
+    font-weight: 400;
+
+    color: #607987;
+}
+
+
+.section-title p {
+    margin-top: 10px;
+
+    font-size: 10px;
+
+    color: #94aab4;
+
+    letter-spacing: 0.5px;
+}
+
+
+.about-container {
+
+    width: 100%;
+    max-width: 600px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 150px;
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+
+.about-text {
+    font-size: 9px;
+    line-height: 1.9;
+
+    color: #8298a2;
+}
+
+
+.about-text p {
+    margin-bottom: 14px;
+}
+
+
+.about-right img {
+    height: 150px;
+
+    object-fit: cover;
+}
+
+
+.statistics {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 5px;
+
+    margin-top: 5px;
+}
+
+
+.stat {
+    min-height: 60px;
+
+    border: 1px solid #dce7eb;
+
+    background: rgba(255, 255, 255, 0.4);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.stat strong {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 19px;
+
+    font-weight: 400;
+
+    color: #718995;
+}
+
+
+.stat span {
+    margin-top: 4px;
+
+    font-size: 6px;
+
+    letter-spacing: 1px;
+
+    color: #9aadb5;
+
+    text-transform: uppercase;
+}
+
+
+
+/* =====================================================
+   CONTACT
+====================================================== */
+
+.contact-section {
+    padding: 20px 20px 90px;
+}
+
+
+.contact-form {
+    width: 100%;
+    max-width: 430px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.contact-form label {
+    margin-bottom: 7px;
+
+    font-size: 7px;
+
+    letter-spacing: 1px;
+
+    color: #8298a2;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+
+    width: 100%;
+
+    border: 1px solid #d9e5e9;
+
+    background: rgba(255,255,255,0.7);
+
+    padding: 11px;
+
+    margin-bottom: 16px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    color: #536b77;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #9bbdca;
+}
+
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+
+.contact-form button {
+
+    border: none;
+
+    background: #506b79;
+
+    color: white;
+
+    padding: 12px;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.contact-form button:hover {
+    background: #7294a2;
+}
+
+
+.contact-info {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 25px;
+
+    flex-wrap: wrap;
+
+    color: #91a7b1;
+
+    font-size: 8px;
+}
+
+
+
+/* =====================================================
+   FOOTER
+====================================================== */
+
+footer {
+
+    border-top: 1px solid #dce7eb;
+
+    padding: 25px;
+
+    text-align: center;
+
+    font-size: 8px;
+
+    color: #91a6af;
+
+    letter-spacing: 1px;
+}
+
+
+
+/* =====================================================
+   LIGHTBOX
+====================================================== */
+
+.lightbox {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 3000;
+
+    background: rgba(250, 252, 253, 0.97);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.35s;
+}
+
+
+.lightbox.open {
+
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+.lightbox-content {
+
+    max-width: 700px;
+
+    width: 70%;
+
+    text-align: center;
+}
+
+
+.lightbox-content img {
+
+    width: 100%;
+
+    max-height: 70vh;
+
+    object-fit: contain;
+
+    box-shadow: 0 15px 45px rgba(60,80,90,0.12);
+}
+
+
+.lightbox-caption {
+    margin-top: 12px;
+}
+
+
+.lightbox-caption h3 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    color: #627b87;
+}
+
+
+.lightbox-caption span {
+
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+
+    color: #9ab1ba;
+
+    text-transform: uppercase;
+}
+
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+
+    position: absolute;
+
+    border: none;
+
+    background: transparent;
+
+    color: #718792;
+
+    cursor: pointer;
+
+    font-family: Arial, sans-serif;
+
+    font-weight: 300;
+
+}
+
+
+.lightbox-close {
+
+    top: 20px;
+    right: 25px;
+
+    font-size: 25px;
+}
+
+
+.lightbox-prev {
+
+    left: 20px;
+
+    font-size: 30px;
+}
+
+
+.lightbox-next {
+
+    right: 20px;
+
+    font-size: 30px;
+}
+
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+
+    color: #41616f;
+}
+
+
+
+/* =====================================================
+   LAPTOP / DESKTOP
+   1200px+
+====================================================== */
+
+@media (min-width: 1200px) {
+
+    .site-header {
+        height: 90px;
+    }
+
+
+    .hero {
+        height: 475px;
+    }
+
+
+    .gallery-container {
+        max-width: 720px;
+    }
+
+
+    .gallery-grid {
+        grid-auto-rows: 160px;
+    }
+
+
+    .about-container {
+        max-width: 600px;
+    }
+
+}
+
+
+
+/* =====================================================
+   TABLET
+   768px - 1199px
+====================================================== */
+
+@media (min-width: 768px)
+       and (max-width: 1199px) {
+
+
+    .site-header {
+        height: 75px;
+    }
+
+
+    .header-container {
+        width: 90%;
+    }
+
+
+    .logo {
+        font-size: 23px;
+    }
+
+
+    .desktop-nav {
+        gap: 25px;
+    }
+
+
+    .desktop-nav a {
+        font-size: 11px;
+    }
+
+
+    .hero {
+        height: 390px;
+    }
+
+
+    .hero h1 {
+        font-size: 54px;
+    }
+
+
+    .hero p {
+        font-size: 13px;
+    }
+
+
+    .gallery-section {
+        padding-top: 45px;
+    }
+
+
+    .gallery-container {
+        max-width: 620px;
+    }
+
+
+    .gallery-grid {
+        grid-auto-rows: 135px;
+    }
+
+
+    .about-container {
+        max-width: 550px;
+    }
+
+
+    .contact-form {
+        max-width: 400px;
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+   BELOW 768px
+====================================================== */
+
+@media (max-width: 767px) {
+
+
+    .site-header {
+        height: 65px;
+    }
+
+
+    .header-container {
+        width: 88%;
+    }
+
+
+    .logo {
+        font-size: 21px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .snowflake {
+        font-size: 18px;
+    }
+
+
+    .desktop-nav {
+        display: none;
+    }
+
+
+    .mobile-menu-btn {
+
+        display: block;
+
+        border: none;
+
+        background: transparent;
+
+        color: #657b86;
+
+        font-size: 22px;
+
+        cursor: pointer;
+
+    }
+
+
+    .mobile-nav {
+
+        display: none;
+
+        position: absolute;
+
+        top: 65px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: white;
+
+        border-top: 1px solid #edf2f4;
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+    .mobile-nav.open {
+        display: flex;
+    }
+
+
+    .mobile-nav a {
+
+        padding: 15px;
+
+        border-bottom: 1px solid #edf2f4;
+
+        font-size: 10px;
+
+        letter-spacing: 2px;
+
+        color: #687d87;
+    }
+
+
+
+    /* HERO */
+
+    .hero {
+
+        height: 330px;
+
+        background-position: center;
+    }
+
+
+    .hero h1 {
+
+        font-size: 43px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .hero p {
+
+        margin-top: 12px;
+
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+
+
+    /* GALLERY */
+
+    .gallery-section {
+
+        padding: 35px 12px 70px;
+    }
+
+
+    .gallery-container {
+
+        max-width: 100%;
+    }
+
+
+    .gallery-filters {
+
+        gap: 16px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .filter-btn {
+
+        font-size: 8px;
+    }
+
+
+    .gallery-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        grid-auto-rows: 150px;
+
+        gap: 4px;
+    }
+
+
+    .gallery-item.tall {
+
+        grid-row: span 2;
+    }
+
+
+
+    /* ABOUT */
+
+    .about-section {
+
+        padding:
+            10px
+            18px
+            70px;
+    }
+
+
+    .section-title {
+
+        margin-bottom: 25px;
+    }
+
+
+    .section-title h2 {
+
+        font-size: 26px;
+    }
+
+
+    .about-container {
+
+        grid-template-columns: 1fr;
+
+        max-width: 450px;
+
+        gap: 25px;
+    }
+
+
+    .about-text {
+
+        font-size: 10px;
+
+        line-height: 1.8;
+    }
+
+
+    .about-right {
+
+        max-width: 230px;
+
+        margin: auto;
+    }
+
+
+    .about-right img {
+
+        height: 220px;
+    }
+
+
+
+    /* CONTACT */
+
+    .contact-section {
+
+        padding:
+            10px
+            18px
+            65px;
+    }
+
+
+    .contact-form {
+
+        max-width: 100%;
+    }
+
+
+    .contact-info {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 10px;
+    }
+
+
+
+    /* LIGHTBOX */
+
+    .lightbox-content {
+
+        width: 82%;
+    }
+
+
+    .lightbox-content img {
+
+        max-height: 60vh;
+    }
+
+
+    .lightbox-prev {
+
+        left: 7px;
+    }
+
+
+    .lightbox-next {
+
+        right: 7px;
+    }
+
+
+    .lightbox-close {
+
+        top: 12px;
+
+        right: 15px;
+    }
+
+}

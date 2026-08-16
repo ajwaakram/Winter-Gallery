@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Winter Gallery</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+====================================================== -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a href="#home"
+           class="logo">
+
+            <span class="snowflake">❄</span>
+
+            <span>WINTER</span>
+
+        </a>
+
+
+        <nav class="desktop-nav">
+
+            <a href="#home">HOME</a>
+
+            <a href="#gallery">GALLERY</a>
+
+            <a href="#about">ABOUT</a>
+
+            <a href="#contact">CONTACT</a>
+
+        </nav>
+
+
+        <button class="mobile-menu-btn"
+                aria-label="Open menu">
+
+            ☰
+
+        </button>
+
+    </div>
+
+
+    <nav class="mobile-nav">
+
+        <a href="#home">HOME</a>
+
+        <a href="#gallery">GALLERY</a>
+
+        <a href="#about">ABOUT</a>
+
+        <a href="#contact">CONTACT</a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+====================================================== -->
+
+<section id="home"
+         class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>Winter Moments</h1>
+
+        <p>A COLLECTION OF FROZEN BEAUTY</p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     GALLERY
+====================================================== -->
+
+<section id="gallery"
+         class="gallery-section">
+
+
+    <div class="gallery-container">
+
+
+        <!-- FILTERS -->
+
+        <div class="gallery-filters">
+
+            <button class="filter-btn active"
+                    data-filter="all">
+
+                ALL
+
+            </button>
+
+
+            <button class="filter-btn"
+                    data-filter="landscapes">
+
+                LANDSCAPES
+
+            </button>
+
+
+            <button class="filter-btn"
+                    data-filter="decorations">
+
+                DECORATIONS
+
+            </button>
+
+
+            <button class="filter-btn"
+                    data-filter="food">
+
+                FOOD
+
+            </button>
+
+
+            <button class="filter-btn"
+                    data-filter="family">
+
+                FAMILY
+
+            </button>
+
+        </div>
+
+
+
+        <!-- GALLERY GRID -->
+
+        <div class="gallery-grid">
+
+
+            <!-- IMAGE 1 -->
+
+            <figure class="gallery-item tall"
+                    data-category="landscapes"
+                    data-title="Mountain Snow">
+
+                <img
+                    src="https://images.unsplash.com/photo-1517825738774-7de9363ef735?auto=format&fit=crop&w=700&q=85"
+                    alt="Snow covered mountain">
+
+            </figure>
+
+
+
+            <!-- IMAGE 2 -->
+
+            <figure class="gallery-item"
+                    data-category="decorations"
+                    data-title="Winter Branches">
+
+                <img
+                    src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=700&q=85"
+                    alt="Winter branches">
+
+            </figure>
+
+
+
+            <!-- IMAGE 3 -->
+
+            <figure class="gallery-item"
+                    data-category="food"
+                    data-title="Winter Coffee">
+
+                <img
+                    src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=700&q=85"
+                    alt="Hot coffee">
+
+            </figure>
+
+
+
+            <!-- IMAGE 4 -->
+
+            <figure class="gallery-item"
+                    data-category="landscapes"
+                    data-title="Frozen Forest">
+
+                <img
+                    src="https://images.unsplash.com/photo-1457269449834-928af64c684d?auto=format&fit=crop&w=700&q=85"
+                    alt="Snowy forest">
+
+            </figure>
+
+
+
+            <!-- IMAGE 5 -->
+
+            <figure class="gallery-item"
+                    data-category="family"
+                    data-title="Winter Friends">
+
+                <img
+                    src="https://images.unsplash.com/photo-1486911278844-a81c5267e227?auto=format&fit=crop&w=700&q=85"
+                    alt="Friends outdoors">
+
+            </figure>
+
+
+
+            <!-- IMAGE 6 -->
+
+            <figure class="gallery-item"
+                    data-category="decorations"
+                    data-title="Christmas Decorations">
+
+                <img
+                    src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=700&q=85"
+                    alt="Christmas decorations">
+
+            </figure>
+
+
+
+            <!-- IMAGE 7 -->
+
+            <figure class="gallery-item"
+                    data-category="food"
+                    data-title="Winter Donuts">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=85"
+                    alt="Colorful donuts">
+
+            </figure>
+
+
+
+            <!-- IMAGE 8 -->
+
+            <figure class="gallery-item"
+                    data-category="family"
+                    data-title="Winter Camp">
+
+                <img
+                    src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=700&q=85"
+                    alt="People around campfire">
+
+            </figure>
+
+
+
+            <!-- IMAGE 9 -->
+
+            <figure class="gallery-item"
+                    data-category="family"
+                    data-title="Winter Learning">
+
+                <img
+                    src="https://images.unsplash.com/photo-1489674267075-cee793167910?auto=format&fit=crop&w=700&q=85"
+                    alt="People studying">
+
+            </figure>
+
+
+
+            <!-- IMAGE 10 -->
+
+            <figure class="gallery-item"
+                    data-category="decorations"
+                    data-title="Winter Gift">
+
+                <img
+                    src="https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=700&q=85"
+                    alt="Christmas gift">
+
+            </figure>
+
+
+
+            <!-- IMAGE 11 -->
+
+            <figure class="gallery-item tall"
+                    data-category="landscapes"
+                    data-title="Winter Road">
+
+                <img
+                    src="https://images.unsplash.com/photo-1483347756197-71ef80e95f73?auto=format&fit=crop&w=700&q=85"
+                    alt="Winter road">
+
+            </figure>
+
+
+
+            <!-- IMAGE 12 -->
+
+            <figure class="gallery-item"
+                    data-category="food"
+                    data-title="Winter Dessert">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=85"
+                    alt="Winter dessert">
+
+            </figure>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+====================================================== -->
+
+<section id="about"
+         class="about-section">
+
+
+    <div class="section-title">
+
+        <h2>About</h2>
+
+    </div>
+
+
+    <div class="about-container">
+
+
+        <div class="about-text">
+
+            <p>
+                Capturing the serene beauty of winter
+                landscapes has been my passion for over
+                a decade. Each photograph tells a story
+                of frozen moments, quiet snowfalls, and
+                the peaceful stillness that blankets the
+                world during the coldest months.
+            </p>
+
+
+            <p>
+                From the majestic mountain peaks covered
+                in pristine snow to intimate family moments
+                wrapped in winter warmth, my work celebrates
+                the unique beauty that this season brings.
+            </p>
+
+
+            <p>
+                Through my lens, I aim to preserve the
+                fleeting magic of winter — the way light
+                dances on ice crystals, the cozy comfort
+                of holiday gatherings, and the breathtaking
+                landscapes transformed by snow.
+            </p>
+
+        </div>
+
+
+
+        <div class="about-right">
+
+            <img
+                src="https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=700&q=85"
+                alt="Winter artwork">
+
+
+            <div class="statistics">
+
+                <div class="stat">
+
+                    <strong>20+</strong>
+
+                    <span>
+                        Exhibitions
+                    </span>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <strong>500+</strong>
+
+                    <span>
+                        Photographs
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+====================================================== -->
+
+<section id="contact"
+         class="contact-section">
+
+
+    <div class="section-title">
+
+        <h2>Get in Touch</h2>
+
+        <p>
+            Let's work together to capture your winter moments.
+        </p>
+
+    </div>
+
+
+    <form class="contact-form">
+
+
+        <label for="name">
+            NAME
+        </label>
+
+        <input
+            type="text"
+            id="name"
+            name="name"
+            required>
+
+
+
+        <label for="email">
+            EMAIL
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required>
+
+
+
+        <label for="message">
+            MESSAGE
+        </label>
+
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required></textarea>
+
+
+
+        <button type="submit">
+            SEND MESSAGE
+        </button>
+
+    </form>
+
+
+
+    <div class="contact-info">
+
+        <span>✉ hello@wintergallery.com</span>
+
+        <span>☎ +1 555 123 4567</span>
+
+        <span>⌖ Germany</span>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <p>
+        © 2026 Winter Gallery
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================================
+     LIGHTBOX
+====================================================== -->
+
+<div class="lightbox"
+     id="lightbox">
+
+
+    <button class="lightbox-close"
+            aria-label="Close">
+
+        ×
+
+    </button>
+
+
+    <button class="lightbox-prev"
+            aria-label="Previous image">
+
+        ‹
+
+    </button>
+
+
+    <div class="lightbox-content">
+
+        <img
+            id="lightbox-image"
+            src=""
+            alt="">
+
+
+        <div class="lightbox-caption">
+
+            <h3 id="lightbox-title">
+            </h3>
+
+            <span id="lightbox-category">
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <button class="lightbox-next"
+            aria-label="Next image">
+
+        ›
+
+    </button>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
